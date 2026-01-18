@@ -1,0 +1,147 @@
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip list
+Package    Version
+---------- -------
+pip        23.0.1
+setuptools 79.0.1
+
+[notice] A new release of pip is available: 23.0.1 -> 25.3
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip install -r requirements.txt
+
+// download media pipe stuff manually.. cos command wise they expired it out
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip install -r requirements.txt
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ python -V
+Python 3.10.19
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ python collect_imgs.py
+Collecting data for class 0
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip install matplotlib
+
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip install absl-py attrs flatbuffers opencv-contrib-python "protobuf>=3.11,<4"
+Collecting absl-py
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip install pickle-mixin
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ python create_dataset.py
+Running so wait
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip install numpy==1.26.4 
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ python train_classifier.py
+100.0% of samples were classified correctly !
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ python inference_classifier.py
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+
+(py_env_10) ubuntu@ubuntu:~/my-space/programming/github-offl/Hand-Sign$ pip list
+Package               Version
+--------------------- -----------
+absl-py               2.3.1
+attrs                 25.4.0
+contourpy             1.3.2
+cycler                0.12.1
+flatbuffers           25.12.19
+fonttools             4.61.1
+joblib                1.5.3
+kiwisolver            1.4.9
+matplotlib            3.10.8
+mediapipe             0.9.0.1
+numpy                 1.26.4
+opencv-contrib-python 4.13.0.90
+opencv-python         4.7.0.68
+packaging             25.0
+pickle-mixin          1.0.2
+pillow                12.1.0
+pip                   23.0.1
+protobuf              3.20.3
+pyparsing             3.3.1
+python-dateutil       2.9.0.post0
+scikit-learn          1.2.0
+scipy                 1.15.3
+setuptools            79.0.1
+six                   1.17.0
+threadpoolctl         3.6.0
+
+[notice] A new release of pip is available: 23.0.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+
+
+
+
+
+
+
+
+
+
+
+coded pad reference : 
+
+https://dashboard.stablebuild.com/pypi-deleted-packages/pkg/mediapipe/0.9.0.1
+
+multiple links untay .. andhuilo
+cp10 unnadhi thiskovali .. for python 10 version
+
+
+
+
+
+-----------------------
+
+media pipe supportives
+pip install absl-py attrs flatbuffers opencv-contrib-python "protobuf>=3.11,<4"
+
+
+out of syll needed : 
+matplot lib ( mentioned at vs code exexute.ipynb
+
+
+package env data : 
+
+/Hand-Sign$ pip list
+Package               Version
+--------------------- -----------
+absl-py               2.3.1
+attrs                 25.4.0
+contourpy             1.3.2
+cycler                0.12.1
+flatbuffers           25.12.19
+fonttools             4.61.1
+joblib                1.5.3
+kiwisolver            1.4.9
+matplotlib            3.10.8
+mediapipe             0.9.0.1
+numpy                 1.26.4
+opencv-contrib-python 4.13.0.90
+opencv-python         4.7.0.68
+packaging             25.0
+pickle-mixin          1.0.2
+pillow                12.1.0
+pip                   23.0.1
+protobuf              3.20.3
+pyparsing             3.3.1
+python-dateutil       2.9.0.post0
+scikit-learn          1.2.0
+scipy                 1.15.3
+setuptools            79.0.1
+six                   1.17.0
+threadpoolctl         3.6.0
+
+[notice] A new release of pip is available: 23.0.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
