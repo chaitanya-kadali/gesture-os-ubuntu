@@ -6,9 +6,19 @@ import numpy as np
 
 import subprocess
 import time
+from datetime import datetime
 
-def open_app(name):
+def open_app(name, last_time):
     subprocess.Popen([name])
+    last_time[name] = datetime.now()
+
+def isRightToOpen(last_time,app_name):
+    if app_name not in last_time:
+        return True
+    last = last_time[app_name]
+    cur = datetime.now()
+    diff = int((cur - last).total_seconds())
+    return (diff>=15)
 
 model_dict = pickle.load(open('./model.p', 'rb'))
 model = model_dict['model']
@@ -25,6 +35,7 @@ hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 
 labels_dict = {0: 'W', 1: 'O', 2: 'V', 3:'L'}
 related_app = {0:"google-chrome", 1:"firefox", 2:"gnome-terminal",3:"brave"}
+last_time={}
 while True:
 
     data_aux = []
@@ -75,7 +86,8 @@ while True:
         cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 0), 4)
         cv2.putText(frame, predicted_character, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 0, 0), 3,
                     cv2.LINE_AA)
-        open_app(app_name)
+        if(isRightToOpen(last_time,app_name)):
+            open_app(app_name,last_time)
 
     cv2.imshow('frame', frame)
     cv2.waitKey(1)
