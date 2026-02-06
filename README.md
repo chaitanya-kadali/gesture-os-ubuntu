@@ -3,7 +3,7 @@
 
 Demo image of output
 
-<img src="./images/demohand.png" alt="Preview"  height="250" />
+<img src="./screenshots/fig 1.png" alt="Preview"  height="250" />
 
 
 - Developed a real-time hand gesture recognition system using Media Pipe and RFC,achieving high accuracy through landmark-based feature extraction.

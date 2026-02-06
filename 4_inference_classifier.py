@@ -126,7 +126,7 @@ while True:
                         cv2.LINE_AA)
             if(isModifyApp(last_time,app_name)):
                 last_time[app_name] = datetime.now()
-                do_action(app_name, int(prediction[0]), app_manager)
+                # do_action(app_name, int(prediction[0]), app_manager)
 
     cv2.imshow('frame', frame)
     cv2.waitKey(1)
