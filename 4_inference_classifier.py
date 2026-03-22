@@ -42,8 +42,10 @@ hands = mp_hands.Hands(
     min_detection_confidence=0.3
 )
 
-labels_dict = {0: '0 cheese', 1: '1 calculator', 2: '2 vlc', 3:'3 clock', 4: '4 cheese', 5: '5 calculator', 6: '6 vlc', 7:'7 clock'}
-related_app = {0:"cheese", 1:"gnome-calculator", 2:"vlc",3:"gnome-clocks", 4:"cheese", 5:"gnome-calculator", 6:"vlc",7:"gnome-clocks"}
+labels_dict = {0: '6 Command Terminal', 1: '1 calculator', 2: '2 cheese', 3:'3 clock',
+                4: '4 Command Terminal', 5: '5 calculator', 6: '6 cheese', 7:'7 clock'}
+related_app = {0:"gnome-terminal", 1:"gnome-calculator", 2:"cheese",3:"gnome-clocks", 
+               4:"terminal", 5:"gnome-calculator", 6:"cheese",7:"gnome-clocks"}
 last_time={}
 app_manager = AppProcessManager()
 
